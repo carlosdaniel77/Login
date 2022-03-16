@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Tela Principal</h3>
+    <h3 style="color:blue;">Tela Principal<br/><br/></h3>
+    <?php
+     $hora = date('H');
+     if ($hora > 19) {
+        $saudacao = "Boa noite,";
+
+     }elseif($hora > 12){
+         $saudacao = "Boa tarde, ";
+     }else{
+         $saudacao = "Bom dia, ";
+     }
+
+     echo $saudacao.$_SESSION['usuario'];
+    ?>
 </body>
 </html>

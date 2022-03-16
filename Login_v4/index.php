@@ -68,7 +68,7 @@
 						<span style="color:red;">
 							<?php
 							if(isset($_GET['erro']) && $_GET['erro'] == 1){
-								echo 'Senha incorreta';
+								echo 'Usuário e/ou senha incorretos';
 							}
 							?>
 						</span>
