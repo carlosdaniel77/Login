@@ -5,7 +5,7 @@ session_start();
 if(isset($_POST['btnLogin'])){
     //Simulando o banco de dados
     $usuario = 'admin';
-    $senhaBanco = crypt(md5('123456'),'etec');
+    $senhaBanco = crypt(md5('123456'),'aula1');
 
     $senhaUserCriptografado = crypt(md5($_POST['pass']),'aula1');
 
@@ -16,7 +16,8 @@ if(isset($_POST['btnLogin'])){
 
     //$cryptSenha = crypt(md5($_POST['pass']),'etec');
 
-        if($usuario == $_POST['username'] && $senhaBanco == $ {
+        if($usuario == $_POST['username'] && $senhaBanco == $) 
+        {
             $_SESSION['usuario'] = $_POST['username'];
             header('Location: principal.php');
 
@@ -24,3 +25,5 @@ if(isset($_POST['btnLogin'])){
             header('Location: index.php?erro=1');
         }
 }
+
+?>

@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h3 style="color:blue;">Tela Principal<br/><br/></h3>
+    <h3><span style="color:blue;">Tela Principal</span><br/><br/></h3>
     <?php
      $hora = date('H');
      if ($hora > 19) {
